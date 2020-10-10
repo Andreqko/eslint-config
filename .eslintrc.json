@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "globals": {
+    "navigator": true,
+    "windows": true,
+    "document": true,
+    "fetch": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:react/recommended",
+    "prettier/react",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "react-hooks"
+  ],
+  "rules": {
+    "react/prefer-stateless-function": "off",
+    "react/no-unescaped-entities": "off",
+    "react/jsx-filename-extension": "off"
+  }
+}
