@@ -6,23 +6,25 @@
     "document": true,
     "fetch": true
   },
+  "plugins": [
+    "jsx-a11y",
+    "react-hooks"
+  ],
   "extends": [
     "airbnb",
     "prettier",
-    "plugin:react/recommended",
     "prettier/react",
+    "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended"
-  ],
-  "plugins": [
-    "react",
-    "jsx-a11y",
-    "react-hooks"
   ],
   "rules": {
     "react/prefer-stateless-function": "off",
     "react/no-unescaped-entities": "off",
     "react/jsx-filename-extension": "off",
-    "arrow-body-style": ["error", "as-needed"]
+    "react/button-has-type": "off",
+    "arrow-body-style": ["error", "as-needed"],
+    "react/destructuring-assignment": ["off", "always", { "ignoreClassFields": true }],
+    "import/no-unresolved": "off"
   }
 }
